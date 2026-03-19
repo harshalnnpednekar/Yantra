@@ -1,9 +1,5 @@
 # ⚙️ YANTRA: The High-Performance Hackathon Engine
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Stack: Fullstack](https://img.shields.io/badge/Stack-Fullstack-brightgreen.svg)]()
-[![AI: Integrated](https://img.shields.io/badge/AI-Integrated-blue.svg)]()
-[![Blockchain: Ready](https://img.shields.io/badge/Blockchain-Ready-orange.svg)]()
 
 **Yantra** is an elite, multi-modular orchestration engine designed to empower developers to dominate 24-48 hour hackathons. By abstracting away complex infrastructure setup, Yantra provides a production-ready foundation for AI, Blockchain, and Full-Stack applications, ensuring your team can focus exclusively on innovation and problem-solving.
 
@@ -13,11 +9,11 @@
 
 Yantra was conceptualized and engineered by the following visionary leads from **Team Bharat Bytes**:
 
-| Architect | Focus Area | Technical Domain |
-| :--- | :--- | :--- |
-| **Shri. Harshal Pednekar** | AI, ML, Data Science, Data Analytics, NLP, Cyber Security | Systems Architecture, Model Serving, Cryptography |
-| **Shri. Ruturaj Rajwade** | Frontend Development, UI/UX and Git/ Github | UI/UX Excellence, Client-side State, API Integration |
-| **Shri. Vedang Mendhurwar** | Backend Development and Database Management | Infrastructure, Async Processing, Database Management |
+| Architect | Technical Specialization |
+| :--- | :--- |
+| **Shri. Harshal Pednekar** | AI, ML, Data Science, Data Analytics, NLP, Cyber Security |
+| **Shri. Ruturaj Rajwade** | Frontend Development, UI/UX and Git/ Github |
+| **Shri. Vedang Mendhurwar** | Backend Development and Database Management |
 
 ---
 
