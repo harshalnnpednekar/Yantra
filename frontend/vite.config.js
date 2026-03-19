@@ -7,7 +7,7 @@ export default defineConfig({
   server: {
     port: 3000,
     proxy: {
-      // Backend API proxy
+      // Proxy to the selected Backend Engine (FastAPI/Flask/Django) running on 8000
       '/api': {
         target: 'http://localhost:8000',
         changeOrigin: true,

@@ -1,35 +1,25 @@
-# Yantra Backend
+# Yantra Unified Backend
 
-High-performance FastAPI + SQLAlchemy (Async) starter.
+This directory contains three framework options and multiple database connectors. 
+You can mix and match any combination.
 
-## 🚀 Setup & Run
+## 📁 Structure
 
-1.  **Create Virtual Environment**:
-    ```bash
-    python -m venv venv
-    source venv/bin/activate  # Windows: venv\Scripts\activate
-    ```
+```text
+backend/
+├── frameworks/
+│   ├── fastapi/      # FastAPI Implementation
+│   ├── flask/        # Flask Implementation
+│   └── django/       # Django Implementation
+├── database/
+│   ├── postgres/     # PostgreSQL (SQLAlchemy) logic
+│   ├── mongodb/      # MongoDB (PyMongo) logic
+│   └── mysql/        # MySQL (PyMySQL) logic
+└── requirements.txt  # All-in-one requirements
+```
 
-2.  **Install Dependencies**:
-    ```bash
-    pip install -r requirements.txt
-    ```
+## 🚀 How to Switch
 
-3.  **Environment Variables**:
-    ```bash
-    cp .env.example .env
-    # Edit .env with your DATABASE_URL
-    ```
-
-4.  **Launch API**:
-    ```bash
-    uvicorn main:app --reload --port 8000
-    ```
-    Swagger docs: `http://localhost:8000/docs`
-
-## 🛠 Tech Stack
-- **FastAPI**
-- **SQLAlchemy 2.0 (Async)**
-- **JWT Auth**
-- **SlowAPI (Rate Limiting)**
-- **WebSockets**
+1.  **Pick a Framework**: Choose a folder in `frameworks/`.
+2.  **Pick a Database**: Choose a connector in `database/`.
+3.  **Link them**: Update the framework's `database.py` or configuration to import the desired connector.
