@@ -1,0 +1,14 @@
+{
+  "name": "yantra-starter-kit",
+  "version": "1.0.0",
+  "description": "Blazing-fast, lightweight, native development environment for the Yantra toolkit.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "concurrently \"cd frontend && npm run dev\" \"cd backend && uvicorn frameworks.fastapi.main:app --port 8000 --reload\" \"cd ai-ml-ds/api && uvicorn app:app --port 8001 --reload\"",
+    "install:all": "npm install && cd frontend && npm install",
+    "setup": "bash setup.sh"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}

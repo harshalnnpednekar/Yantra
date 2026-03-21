@@ -222,6 +222,25 @@ uvicorn api.main:app --reload --port 8001
 *   **Add Logic**: Choose your backend framework and replace mock stats with your logic.
 *   **Train AI**: Use `ai-ml-ds/notebooks/EDA.ipynb` to clean your data and update `ai-ml-ds/models/classifier.py` with your custom model.
 
+## 🚀 Fast Deployment Guide
+
+For instant production hosting without manual CI/CD setup, use these optimized paths:
+
+### 1. Frontend (UI)
+- Go to [Vercel.com](https://vercel.com).
+- Import your GitHub repository.
+- Ensure the framework preset is set to **Vite** (React).
+- Click **Deploy**.
+
+### 2. Backend & AI (API Services)
+- Go to [Render.com](https://render.com) or [Railway.app](https://railway.app).
+- Create a new **Web Service**.
+- Connect your GitHub repository.
+- Set the **Start Command** to your preferred engine:
+  - **FastAPI**: `uvicorn frameworks.fastapi.main:app --host 0.0.0.0 --port $PORT`
+  - **AI Service**: `uvicorn api.app:app --host 0.0.0.0 --port $PORT`
+- Add your environment variables from `.env.example`.
+
 ---
 
 *Yantra © 2026. Engineered with Focus and Precision by **Team Bharat Bytes**.*
