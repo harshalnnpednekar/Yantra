@@ -37,7 +37,8 @@ Yantra/
 │   ├── package.json            # Dependencies & Scripts
 │   ├── tailwind.config.js      # CSS Framework configuration
 │   ├── vite.config.js          # Proxy & Build configuration
-│   └── .env.example            # Environment template
+│   ├── .env.example            # Environment template
+│   └── README.md               # Frontend architecture & UI guide
 ├── backend/                    # Unified Plug-and-Play Backend
 │   ├── database/               # Database Connectors
 │   │   ├── mongodb/           # MongoDB (NoSQL) logic
@@ -52,26 +53,17 @@ Yantra/
 ├── ai-ml-ds/                   # AI Inference & Data Science Research
 │   ├── api/                    # FastAPI inference server
 │   ├── models/                 # Model architectures & training
-│   │   ├── artifacts/          # Saved model weights (.pkl, .pt)
-│   │   ├── trainer.py          # Training loop skeleton
-│   │   ├── predictor.py        # Generic inference class
-│   │   ├── classifier.py       # Example: Logistic Regression
-│   │   └── embeddings.py       # Example: NLP Embeddings
-│   ├── notebooks/              # Research & Development
-│   │   ├── 1_EDA_and_Analytics.ipynb
-│   │   └── 2_Model_Training.ipynb
+│   ├── notebooks/              # Research & Development (EDA & Training)
 │   ├── utils/                  # ML/DS Utility helpers
-│   │   ├── preprocessing.py    # Data cleaning & Scaling
-│   │   ├── visualizer.py       # Analytics plots
-│   │   └── metrics.py          # Valuation & Scoring
-│   ├── data/                   # Dataset management (Raw/Processed)
-│   ├── config.py               # Path & Seed configuration
-│   └── requirements.txt        # AI-specific dependencies
+│   ├── data/                   # Dataset management
+│   ├── requirements.txt        # AI-specific dependencies
+│   └── README.md               # AI/ML service and inference guide
 ├── cybersec-blockchain/        # Trust Layers & Hardening
 │   ├── contracts/              # Solidity (Token, Voting)
 │   ├── scripts/                # Deployment and migration scripts
 │   ├── security/               # Scanner and Encryption core
-│   └── utils/                  # Web3 wallet management
+│   ├── utils/                  # Web3 wallet management
+│   └── README.md               # Security audits & Smart contract guide
 └── README.md                   # The Master Playbook
 ```
 
@@ -95,7 +87,8 @@ Choose your weapon: **FastAPI**, **Flask**, or **Django**.
 A dedicated node for data science research and production-grade model serving.
 *   **Serving Layer**: Independent worker node (Port 8001) for model inference.
 *   **AI Stack**: Integrated support for HuggingFace Transformers, PyTorch, and Scikit-learn.
-*   **Notebooks**: Pre-configured EDA (Exploratory Data Analysis) environment for rapid data exploration.
+*   **Notebooks**: Pre-configured environment for Exploratory Data Analysis (EDA) and Model Training.
+*   **Utility Helpers**: Pre-built modules for data preprocessing, visualization, and scoring.
 
 ### 🔐 Module 4: CyberSec & Blockchain Ecosystem (`cybersec-blockchain/`)
 The trust and security layer for decentralized and hardened applications.
@@ -133,7 +126,7 @@ Yantra provides a unique, decoupled backend structure in the `backend/` folder. 
 
 ### 1. Project Type: AI & Machine Learning Heavy
 *   **Workflow**: Focus 90% of your effort in `ai-ml-ds/`. Use the pre-configured FastAPI service (Port 8001) to serve your model predictions.
-*   **Data**: Drop your datasets into `ai-ml-ds/data/` and use the `EDA.ipynb` to quickly gain insights and plot distributions.
+*   **Data**: Drop your datasets into `ai-ml-ds/data/` and use the `1_EDA_and_Analytics.ipynb` to quickly gain insights and plot distributions.
 *   **Integration**: Use the `ai-ml-ds/api/main.py` to bridge your high-level Python logic with the rest of the stack via REST.
 
 ### 2. Project Type: Full-Stack Web App (SaaS)
