@@ -168,6 +168,30 @@ If you don't want to use Git, simply click **Code (Green Button) > Download ZIP*
 
 ---
 
+## ⚡ Quick Start (Automation Scripts)
+
+For a one-click setup of your entire environment (Frontend, Backend, and AI), use the provided automation scripts that handle dependency installation and virtual environment creation.
+
+### For Windows:
+Double-click **`setup.bat`** or run it from your terminal:
+```powershell
+./setup.bat
+```
+
+### For Linux / macOS / Git Bash:
+Run the **`setup.sh`** script:
+```bash
+chmod +x setup.sh  # (First time only)
+./setup.sh
+```
+
+**What these scripts do:**
+- Install all frontend dependencies via `npm`.
+- Create a local Python virtual environment (`.venv`).
+- Install all backend and AI/ML dependencies via `pip`.
+
+---
+
 ## 🚀 Step-by-Step Implementation Guide
 
 Follow these steps to go from "Zero" to a "Live MVP" in under an hour:
