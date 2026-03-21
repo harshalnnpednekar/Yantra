@@ -51,10 +51,21 @@ Yantra/
 │   └── requirements.txt        # All-in-one backend dependencies
 ├── ai-ml-ds/                   # AI Inference & Data Science Research
 │   ├── api/                    # FastAPI inference server
-│   ├── models/                 # Pre-configured classifiers
-│   ├── notebooks/              # EDA and training labs
-│   ├── utils/                  # Signal processing & math helpers
-│   ├── data/                   # Sample datasets
+│   ├── models/                 # Model architectures & training
+│   │   ├── artifacts/          # Saved model weights (.pkl, .pt)
+│   │   ├── trainer.py          # Training loop skeleton
+│   │   ├── predictor.py        # Generic inference class
+│   │   ├── classifier.py       # Example: Logistic Regression
+│   │   └── embeddings.py       # Example: NLP Embeddings
+│   ├── notebooks/              # Research & Development
+│   │   ├── 1_EDA_and_Analytics.ipynb
+│   │   └── 2_Model_Training.ipynb
+│   ├── utils/                  # ML/DS Utility helpers
+│   │   ├── preprocessing.py    # Data cleaning & Scaling
+│   │   ├── visualizer.py       # Analytics plots
+│   │   └── metrics.py          # Valuation & Scoring
+│   ├── data/                   # Dataset management (Raw/Processed)
+│   ├── config.py               # Path & Seed configuration
 │   └── requirements.txt        # AI-specific dependencies
 ├── cybersec-blockchain/        # Trust Layers & Hardening
 │   ├── contracts/              # Solidity (Token, Voting)
@@ -220,7 +231,7 @@ uvicorn api.main:app --reload --port 8001
 ### Step 5: Customize and Iterate
 *   **Modify UI**: Go to `frontend/src/pages/Dashboard.jsx` and start adding your specific components.
 *   **Add Logic**: Choose your backend framework and replace mock stats with your logic.
-*   **Train AI**: Use `ai-ml-ds/notebooks/EDA.ipynb` to clean your data and update `ai-ml-ds/models/classifier.py` with your custom model.
+*   **Train AI**: Use `ai-ml-ds/notebooks/1_EDA_and_Analytics.ipynb` to clean your data and `2_Model_Training.ipynb` to train your model. Update `ai-ml-ds/models/predictor.py` with your custom inference logic.
 
 ## 🚀 Fast Deployment Guide
 

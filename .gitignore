@@ -15,6 +15,17 @@ poetry.lock
 
 # Jupyter Notebooks
 .ipynb_checkpoints/
+*.ipynb_checkpoints/
+
+# ML Data & Models
+*.csv
+*.parquet
+*.pkl
+*.h5
+*.pt
+*.pth
+*.onnx
+model_weights/
 
 # Environment Variables
 .env
